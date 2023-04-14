@@ -20,6 +20,7 @@ def paypal_cancel(request):
 def home(request):
 
     host = request.get_host()
+    print(host)
 
     paypal_dict = {
         "business": settings.PAYPAL_RECEIVER_EMAIL,
